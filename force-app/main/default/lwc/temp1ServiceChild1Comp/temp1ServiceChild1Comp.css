@@ -1,0 +1,19 @@
+:host{
+    --box-shadow: 5px 10px 8px #888888;
+    --hover: 5px 10px 8px #5ed8fd;
+}
+
+.card{
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    height: 10rem;
+    width: 17rem;
+    margin-top: 1rem;
+    transition: ease-in-out 0.5s;
+    
+}
+
+.card:hover{
+    box-shadow: var(--hover);
+    transform: scale(1);
+}

@@ -1,0 +1,50 @@
+<template>
+    <lightning-card title="" class="slds-card">
+        
+
+       
+        <div class="slds-grid slds-wrap slds-gutters">
+            <!-- left hand side -->
+            <!-- Carosoul  -->
+            <div class="slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_6-of-12 slds-m-bottom_medium slds-p-around_xx-small">
+                <div class="slds-text-align_center">
+                    <lightning-carousel>
+                        <lightning-carousel-image
+                            src = {img1}
+                            href = "#">
+                        </lightning-carousel-image>
+                        <lightning-carousel-image
+                            src = {img2}
+                            href = "#">
+                        </lightning-carousel-image>
+                        <lightning-carousel-image
+                            src = {img3}
+                            href = "#">
+                        </lightning-carousel-image>
+                    </lightning-carousel>
+                </div>
+            </div>
+            <!-- right hand side -->
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_6-of-12 slds-m-top_xx-large">
+                <h1 class="slds-text-heading_large" style="font-weight:bold;">We Deploy World Class Agile Product Teams on Demand</h1>
+                <p class="slds-var-m-horizontal_large slds-var-m-vertical_medium slds-text-heading_small">Vivasoft specializes in providing custom software development services. Get premium software solutions from a reliable outsourcing partner and set your business apart. Skilled teams that can design, build, space and scale your vision in the most efficient way.</p>
+                <div class="slds-grid slds-gutters slds-m-vertical_large slds-var-p-around_xx-medium">
+                    <div class="slds-col">
+                        <h1 class="slds-text-heading_large" style="font-weight:bold;">7+</h1>
+                        <p class="slds-m-top_xx-small slds-text-heading_small">Years of experience</p>
+                    </div>
+                    <div class="slds-col">
+                        <h1 class="slds-text-heading_large" style="font-weight:bold;">7+</h1>
+                        <p class="slds-m-top_xx-small slds-text-heading_small">Dedicated Engineers</p>
+                    </div>
+                    <div class="slds-col">
+                        <h1 class="slds-text-heading_large" style="font-weight:bold;">7+</h1>
+                        <p class="slds-m-top_xx-small slds-text-heading_small">Successful Projects</p>
+                    </div>
+                </div>
+                <lightning-button variant="brand" label="Hire Developer" title="Hire Developer" onclick={handleHireDevClick} class="slds-m-top_x-large slds-text-heading_medium"></lightning-button>
+            </div>
+              
+        </div>
+    </lightning-card>
+</template>

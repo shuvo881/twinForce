@@ -1,0 +1,36 @@
+<template>
+
+    <div class="slds-align_absolute-center">
+        <div class="outer-div">
+            <div class="logo-div center">
+                <img src={company_logo} width="100px"/>
+            </div>
+            <div if:true={errorCheck} class="error slds-var-p-around_x-small slds-var-p-top_small" role="alert">
+                <span>{errorMessage}</span>
+            </div>
+            <div class="email-input">
+                <div class="email-label">
+                    <lightning-icon size="small" class="icon" icon-name="utility:email" ></lightning-icon>
+                Email 
+                </div>
+                
+                <input placeholder="Email" class="slds-input" type="text" value={username} onchange={handleUsername} required/>
+            </div>
+            <div class="password-input">
+                <div class="password-label">
+                <lightning-icon size="small" class="icon" icon-name="utility:lock"></lightning-icon>
+                Password
+                </div>
+                
+                <input placeholder="Password" class="slds-input" type="password" value={password} onchange={handlePassword} required/>
+            </div>
+            <div class="login-button">
+                <lightning-button class="login" variant="brand" label="Log in" onclick={handleLogin}></lightning-button>
+            </div>
+            <div class="center footer">
+                <div><a class="link" href="/s/login/ForgotPassword">Forgot password?</a></div>
+                <div>Not a member? <a class="link" href="/s/login/SelfRegister">Register</a></div>
+            </div>
+        </div>
+    </div>
+</template>

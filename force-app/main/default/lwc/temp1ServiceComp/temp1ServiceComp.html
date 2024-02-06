@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="" class="slds-card slds-align_absolute-center" style="padding-left:10rem; padding-right:10rem;">
+        <h1 class="slds-text-heading_large slds-align_absolute-center">Most Effective Software Development Outsourcing Service</h1>
+        <p class="slds-text-heading_small slds-text-align_center slds-p-around_large">As your software development partner, we are committed to helping you establish long-term business relationships. We offer a variety of outsourcing services that can be tailored to your specific needs. Our team of experts has extensive experience in all aspects of software development, from enterprise applications to mobile apps and everything in between.</p>
+        <template if:true={services} for:each={services} for:item="serviceList" for:index="index">
+           <div key={serviceList.key} class="slds-grid slds-wrap slds-gutters">
+                <template if:true={serviceList} for:each={serviceList} for:item="service" for:index="index">
+                    <div key={service.id} class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-medium-size_3-of-12">
+                        <c-temp1-Service-Child1-Comp title={service.title} icon_name={service.icon_name} card_body={service.body}></c-temp1-Service-Child1-Comp>
+                    </div>
+                </template>
+           </div>
+        </template>
+    </lightning-card>
+</template>

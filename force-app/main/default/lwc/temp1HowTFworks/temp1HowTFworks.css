@@ -1,0 +1,28 @@
+.howItWorks{
+    background-color: #f6f5fe;
+}
+.columData{
+    text-align: center;
+}
+.downPart{
+    text-align: left;
+    color: black;
+    font-weight: 500;
+    padding: 20px;
+}
+.upperPart{
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+.Bottom{
+    font-weight: bold;
+}
+.card{
+    height: 20rem;
+    /* width: 300px;
+    margin: 10px;
+    align-items: center;
+    align-content: center; */
+
+}

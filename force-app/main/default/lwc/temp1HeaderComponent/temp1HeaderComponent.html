@@ -1,0 +1,133 @@
+<template>
+    <div class="header-back"></div>
+    <header class="header-of-page ">
+        <div class="header-content">
+            <a href="/?home=1" class="left-logo">
+                <img src={company_logo} alt="" class="pic1">
+            </a>
+            <div class="header-nav">
+                <div class="nav-item" onclick={clickNav}>
+                    <span class="first-nav">Product<div class="iconfont icon_broad_back"><lightning-icon
+                                icon-name="utility:chevrondown" alternative-text="Connected" size="xx-small">
+                            </lightning-icon> </div></span>
+                    <div class="second-menu nav-second-menu">
+                        <div class="left-list">
+                            <div class="top-titles">Features</div>
+                            <a href="/mockplus-rp"
+                                style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f9/Globe_Flat_Icon_GIF_Animation.gif);">
+                                <span>Prototyping</span>
+                                <p>Free web & app prototyping tool</p>
+                            </a>
+                            <a href="/free-wireframing-tool"
+                                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/Sailboat_Flat_Icon_GIF_Animation.gif');">
+                                <span>Wireframing</span>
+                                <p>Free online wireframing tool</p>
+                            </a>
+                            <a href="/ux-design-tool"
+                                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Target_Flat_Icon_GIF_Animation.gif');">
+                                <span>UX design</span>
+                                <p>Design tool for UX team</p>
+                            </a>
+                            <!-- <a style="background-image: url('/enUS/images/nav/pic4.png');" id="head-nav-download-rp">
+                    <span>Download App</span>
+                    <p>Prototyping offline software</p>
+                </a> -->
+                            <div class="top-titles">Learn</div>
+                            <a href="/learn/what-is-mockplus-rp" class="a1">What is Mockplus RP ? </a>
+                            <div class="top-titles-line">Need an offline prototyping software？</div>
+                            <a href="/download/mockplus-classic"
+                                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6c/Schedule_Flat_Icon_GIF_Animation.gif');">
+                                <span>Mockplus Classic</span>
+                                <p>A rapid desktop prototyping tool</p>
+                            </a>
+                        </div>
+                        <div class="line"></div>
+                        <div class="right-cons">
+                            <div class="top-titles">Templates<a href="/example/rp" class="more">See all <div
+                                        class="iconfont icon_tag_right_arrow"><lightning-icon
+                                            icon-name="utility:chevronright" alternative-text="Connected"
+                                            size="xx-small">
+                                        </lightning-icon> </div></a></div>
+                            <a href="/example/rp/92" class="a1">App wireframe kits</a>
+                            <a href="/example/rp/90" class="a1">Low-fi wireframe</a>
+                            <a href="/example/rp/100" class="a1">High-fi wireframe</a>
+                            <a href="/example/rp/58" class="a1">Free UI Kits</a>
+                            <div class="top-titles">Why Mockplus RP</div>
+                            <a href="/mockplus-vs-axure" class="a1">Compare Axure</a>
+                            <a href="/mockplus-vs-justinmind" class="a1">Compare Justinmind</a>
+                            <a href="https://help.mockplus.com/p/401" class="a1">Create your first prototype</a>
+                            <a href="/learn/prototype" class="a1">Learn prototyping</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="/enterprise" class="first-nav">Enterprise</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pricing/mockplus-rp" class="first-nav">Pricing</a>
+                    <!-- <span class="first-nav">Pricing<i class="iconfont icon_broad_back"></i></span>
+        <div class="second-menu nav-second-menu" style="width: 252px; padding: 16px;">
+            <a href="/pricing/mockplus-rp" class="price-a"><img src="/enUS/images/nav/rp1.png" alt="">Mockplus RP</a>
+            <a href="/pricing/mockplus-cloud" class="price-a"><img src="/enUS/images/nav/cc.png" alt="">Mockplus Cloud</a>
+        </div> -->
+                </div>
+                <div class="nav-item">
+                    <a href="/example/rp" class="first-nav">Templates</a>
+                </div>
+                <div class="nav-item" onclick={clickNav}>
+                    <span class="first-nav">Resources<div class="iconfont icon_broad_back"><lightning-icon
+                                icon-name="utility:chevrondown" alternative-text="Connected" size="xx-small">
+                            </lightning-icon></div></span>
+                    <div class="second-menu nav-second-menu" style="width: 538px;">
+                        <div class="left-a">
+                            <a href="https://help.mockplus.com/">Help center</a>
+                            <a href="/learn">Learn design</a>
+                            <a href="/community">Community</a>
+                            <a href="/blog">Blog</a>
+                        </div>
+                        <div class="line" style="left: 198px;"></div>
+                        <div class="right-cons">
+                            <div class="top-titles">What's new<a href="/newfeatures" class="more">See all <div
+                                        class="iconfont icon_tag_right_arrow"><lightning-icon
+                                            icon-name="utility:chevronright" alternative-text="Connected"
+                                            size="xx-small">
+                                        </lightning-icon></div></a></div>
+
+                            <a href="/blog/post/visible-sub-artboards" class="blog-a">
+                                <div class="pic"
+                                    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Youtube_2018.gif');">
+                                </div>
+                                <span>Design Popups Faster with Visible Sub-Artboards</span>
+                            </a>
+
+                            <a href="/blog/post/create-custom-share-links" class="blog-a">
+                                <div class="pic"
+                                    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Youtube_2018.gif');">
+                                </div>
+                                <span>New in Mockplus RP: Create Custom Share Links for Different Sharing
+                                    Scenarios</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-login">
+                <a href="/signin?source=web-rp" rel="nofollow">Log in</a>
+                <a href="/signup?source=web-rp" class="free" rel="nofollow">Get Started for Free</a>
+            </div>
+
+            <div class="iconfont icon_menu">
+                <lightning-icon icon-name="utility:rows" alternative-text="Connected" size="small" onclick={handleMenu}>
+                </lightning-icon>
+            </div>
+            <div class="iconfont icon_menu_close">
+                <lightning-icon icon-name="utility:close" alternative-text="Connected" size="small"
+                    onclick={handleClose}>
+                </lightning-icon>
+            </div>
+        </div>
+    </header>
+</template>

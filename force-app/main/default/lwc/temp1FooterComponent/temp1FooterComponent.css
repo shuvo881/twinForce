@@ -1,0 +1,73 @@
+.footer-container {
+    background-color: #5ed8fd;
+    padding: 20px;
+}
+.icon{
+    height: 25px;
+}
+.left-logo .pic1{
+    margin-bottom: 10px;
+    height: 75px;
+}
+footer {
+    width: 1200px;
+}
+.socials{
+    margin-top: 15px;
+}
+.footer-title {
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer-menu {
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+.credit{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px; 
+    margin-top: 15px;
+}
+.form-label {
+    color: #fff;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+button {
+    --slds-c-button-color-background: #069EDB;
+    padding: 8px;
+    border-radius: 10px;
+    color: #fff;
+    width: 50%;
+    --slds-c-button-color-border: #069EDB;
+}
+button:hover {
+    --slds-c-button-color-background: #05a9ce;
+    color: #fff;
+}
+@media only screen and (max-width: 780px) {
+    .tablet-mobile-mid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .email-form{
+        width: 100%;
+    }
+}

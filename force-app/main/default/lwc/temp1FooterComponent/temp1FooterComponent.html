@@ -1,0 +1,92 @@
+<template>
+    <div class="footer-container slds-align_absolute-center">
+        <footer class="slds-grid slds-wrap slds-gutters ">
+            <div class="slds-col slds-align_absolute-center slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-5">
+                <div class="logo-and-socials ">
+                    <a href="/?home=1" class="left-logo slds-align_absolute-center ">
+                        <img src={company_logo} alt="" class="pic1">
+                    </a>
+                    <h1 class="slds-border_bottom footer-title">Connect With Us</h1>
+                    <div class="socials slds-grid  slds-align_absolute-center  slds-gutters ">
+                        <a href="#">
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg' alt="" class="icon slds-col">
+                        </a>
+                        <a href="#">
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png' alt="" class="icon slds-col">
+                        </a>
+                        <a href="#">
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg' alt="" class="icon slds-col">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-5">
+                <div class="tablet-mobile-mid">
+                    <h1 class="slds-border_bottom footer-title">Company</h1>
+                    <a href="#">
+                        <p class="footer-menu">About us</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer-menu">Privacy Policy</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer-menu">Blog</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer-menu">Career</p>
+                    </a>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-5">
+                <div class="tablet-mobile-mid">
+                    <h1 class="slds-border_bottom footer-title">Services</h1>
+                    <a href="#">
+                        <p class="footer-menu">Customized Solutions</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer-menu">Seamless Collaboration​</p>
+                    </a>
+                    <a href="#">
+                        <p class="footer-menu">Reliable Delivery</p>
+                    </a>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-5">
+                <div class="tablet-mobile-mid">
+                    <h1 class="slds-border_bottom footer-title">Send Us an email</h1>
+                    <form class="email-form slds-form-element">
+                        <label class="slds-form-element__label form-label" for="name-input">
+                            <abbr class="slds-required" title="required">* </abbr>Your Name</label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="name-input" placeholder="Name" required="" class="slds-input" />
+                        </div>
+                        <label class="slds-form-element__label form-label" for="subject-input">
+                            <abbr class="slds-required" title="required">* </abbr>Subject</label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="subject-input" placeholder="Subject" required="" class="slds-input" />
+                        </div>
+                        <label class="slds-form-element__label form-label" for="email-content"> <abbr class="slds-required" title="required">* </abbr>What is your query?</label>
+                        <div class="slds-form-element__control">
+                            <textarea id="email-content" placeholder="Write your email.." class="slds-textarea"></textarea>
+                        </div>
+                        <div class="slds-form-element__control">
+                            <button type="submit" class="slds-button slds-button_neutral">Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-5">
+                <div class="tablet-mobile-mid">
+                    <h1 class="slds-border_bottom footer-title">Address</h1>
+                    <p class="footer-menu">Ramzannesa Super Market, 2 No. Harunabad, Mirpur Cantonment Road, Mirpur-12, Pallabi, Dhaka - 1216</p>
+                    <p class="footer-menu footer-title">(+880) 01556777043</p>
+                </div>      
+                <lightning-map map-markers={mapMarkers}  zoom-level="7"></lightning-map>
+            </div>
+            <div class="slds-col slds-align_absolute-center">
+                <p class="credit">© 2024 TwinForce Solutions. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+</template>

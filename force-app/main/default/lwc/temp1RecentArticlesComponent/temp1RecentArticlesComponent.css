@@ -1,0 +1,15 @@
+.title{
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-size: 28px;
+}
+.slogan{
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+.recent-articles{
+    width: 1200px;
+}

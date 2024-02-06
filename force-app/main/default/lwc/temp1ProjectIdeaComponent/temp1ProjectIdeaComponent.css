@@ -1,0 +1,54 @@
+.project-ideas{
+    background-color: #5ed8fd;
+    border-radius: 25px;
+    width: 1200px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.title{
+    color: #fff;
+    font-weight:bold;
+    text-transform: capitalize;
+    /* padding-bottom: 15px; */
+    font-size: 26px;
+}
+.content{
+    color: #fff;
+    font-weight:450;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+button {
+    --slds-c-button-color-background: #069EDB;
+    padding: 8px;
+    border-radius: 10px;
+    color: #fff;
+    width: 20%;
+    --slds-c-button-color-border: #069EDB;
+}
+button:hover {
+    --slds-c-button-color-background: #05a9ce;
+    color: #fff;
+}
+@media only screen and (max-width: 780px) {
+    button{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 515px) {
+    button{
+        font-size: 10px;
+        width: 45%;
+    }
+    .title{
+        font-size: 13px;
+    }
+    .content{
+        font-size: 10px;
+    }
+}

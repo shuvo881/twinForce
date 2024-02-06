@@ -1,0 +1,4 @@
+/* Hide the button in lightning-carousel-push */
+.slds-carousel__autoplay svg{
+  display: none !important;
+}
