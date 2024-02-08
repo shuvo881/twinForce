@@ -1,0 +1,154 @@
+<template>
+
+    <div class="slds-align_absolute-center">
+        <div class="outer-div">
+            <div class="logo-div center">
+                <img src={company_logo} width="100px"/>
+            </div>
+            <div class="slds-grid slds-wrap slds-gutters ">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="name-input">
+                        <div class="First-Name-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:user" ></lightning-icon>
+                        First Name
+                        </div>
+                        
+                        <input placeholder="First Name" class="slds-input" type="text" value={firstName} onchange={handleUsername} required/>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="name-input">
+                        <div class="Last-Name-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:user" ></lightning-icon>
+                        Last Name
+                        </div>
+                        
+                        <input placeholder="Last Name" class="slds-input" type="text" value={lastName} onchange={handleUsername} required/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap slds-gutters">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="email-input">
+                        <div class="email-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:email" ></lightning-icon>
+                        Email
+                        </div>
+                        
+                        <input placeholder="Email" class="slds-input" type="text" value={email} onchange={handleUsername} required/>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="phone-input">
+                        <div class="phone-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:call" ></lightning-icon>
+                        Phone
+                        </div>
+                        
+                        <input placeholder="Phone" class="slds-input" type="text" value={phone} onchange={handleUsername} required/>
+                    </div>
+                </div>               
+            </div>
+            <div class="slds-grid slds-wrap slds-gutters">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="street-input">
+                        <div class="street-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:home" ></lightning-icon>
+                        Street
+                        </div>
+                        
+                        <input placeholder="Street" class="slds-input" type="text" value={street} onchange={handleCity} required/>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="city-input">
+                        <div class="city-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:home" ></lightning-icon>
+                        City
+                        </div>
+                        
+                        <input placeholder="City" class="slds-input" type="text" value={city} onchange={handleCity} required/>
+                    </div>
+                </div>                
+            </div>
+            <div class="slds-grid slds-wrap slds-gutters">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="state-input">
+                        <div class="state-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:home" ></lightning-icon>
+                        State
+                        </div>
+                        
+                        <input placeholder="State" class="slds-input" type="text" value={state} onchange={handleState} required/>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="zip-input">
+                        <div class="zip-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:home" ></lightning-icon>
+                        Zip-Code
+                        </div>
+                        
+                        <input placeholder="Zip-Code" class="slds-input" type="text" value={zip} onchange={handleZip} required/>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="slds-grid slds-wrap slds-gutters">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="country-input">
+                        <div class="country-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:home"></lightning-icon>
+                            Country
+                        </div>
+                        <lightning-combobox
+                            name="options"
+                            value={selectedOption}
+                            placeholder="Select an Option"
+                            options={picklistOptions}
+                            onchange={handleChange}>
+                        </lightning-combobox>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="bDate-input">
+                        <div class="bDate-label">
+                            <lightning-icon size="small" class="icon" icon-name="utility:date_time"></lightning-icon>
+                            Date Of Birth
+                            </div>
+                        <lightning-input type="date" value="2017-09-07" min="2017-09-05" max="2023-01-01" ></lightning-input>
+                    </div>
+                </div>                
+            </div>
+            <div class="slds-grid slds-wrap slds-gutters">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="password-input">
+                        <div class="password-label">
+                        <lightning-icon size="small" class="icon" icon-name="utility:lock"></lightning-icon>
+                        Password
+                        </div>
+                        
+                        <input placeholder="Password" class="slds-input" type="password" value={password} onchange={handlePassword} required/>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+                    <div class="password-input">
+                        <div class="password-label">
+                        <lightning-icon size="small" class="icon" icon-name="utility:lock"></lightning-icon>
+                        Confirm-Password
+                        </div>
+                        
+                        <input placeholder="Confirm-Password" class="slds-input" type="password" value={password} onchange={handlePassword} required/>
+                    </div>
+                </div>
+            </div>
+            <div class="signup-button">
+                <lightning-button class="signup" variant="brand" label="Sign Up" onclick={handleSignUp}></lightning-button>
+            </div>
+            <div class="center footer">
+                <div>Already a member? <a class="link" href="/login">Login</a></div>
+            </div>
+        </div>
+    </div>
+</template>

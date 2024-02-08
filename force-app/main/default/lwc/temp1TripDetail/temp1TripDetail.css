@@ -1,0 +1,138 @@
+.icon {
+    padding-right: 10px;
+    /* #09b984;;  */
+    --slds-c-icon-color-foreground-default: #0E3074;
+}
+
+.trip-name {
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #0E3074;
+}
+
+.trip-price {
+    font-weight: 300;
+    font-size: 18px;
+    color: #0E3074;
+    margin-right: 6px;
+}
+
+.trip-duration {
+    font-weight: 300;
+    font-size: 16px;
+    color: #0E3074;
+    margin-right: 6px;
+    width: fit-content;
+}
+
+.duration-container {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.trip-price-per-person {
+    font-weight: 300;
+    color: #0E3074;
+    font-size: 16px;
+    margin-right: 6px;
+}
+
+.trip-location {
+    font-weight: 500;
+    color: #0E3074;
+    ;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.more-details-card {
+    background-color: #0E3074;
+    border-radius: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 13px;
+    padding-left: 13px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: center;
+    width: fit-content;
+}
+
+.more-details-card-title {
+    color: #fff;
+    font-size: 23px;
+    line-height: 45px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.more-details-card-subtitle {
+    color: #fff;
+    font-size: 16px;
+    line-height: 45px;
+    font-weight: 550;
+}
+
+.trip-desc-title {
+    color: #0E3074;
+    font-size: 23px;
+    line-height: 45px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.trip-desc {
+    color: #0E3074;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    width: 90%;
+    margin-bottom: 8px;
+}
+
+.card-value {
+    padding-left: 20px;
+}
+
+.book-now-btn {
+    padding: 15px;
+    background-color: #0E3074;
+    color: #fff;
+    border-radius: 8px;
+    outline: none;
+    margin-top: 6px;
+    margin-left: 60px;
+}
+
+.book-now-btn:hover {
+    background-color: #1c4494;
+}
+
+@media only screen and (max-width: 313px) {
+    .more-details-card-subtitle {
+        font-size: 14px;
+    }
+
+    .card-value {
+        font-size: 14px;
+    }
+
+    .trip-name {
+        font-size: 30px;
+    }
+
+    .book-now-btn {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .book-now-btn {
+        margin-left: 0px;
+    }
+}

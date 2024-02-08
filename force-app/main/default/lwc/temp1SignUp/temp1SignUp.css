@@ -1,15 +1,10 @@
 .outer-div{
-    width: 380px;
+    width: 40rem;
     position: absolute;
     background-color: #f0f0f0;
     box-shadow: 0px 0px 5px 1px #b1b1b1;
     padding:20px;
 }
-
-.logo-div{
-    margin-bottom: 30px;
-}
-
 .icon{
     margin-right: 10px;
     display: flex;
@@ -17,48 +12,46 @@
     --slds-c-icon-color-foreground-default:#049cdc !important;
    
 }
+.logo-div{
+    margin-bottom: 30px;
+}
+.center{
+    text-align: center;
+}
+.name-input, .email-input, .password-input, .city-input, .phone-input, .street-input, .state-input, .zip-input, .bDate-input, .country-input{
+    /* display: flex;*/
+     margin-top: 0.5rem;
+     margin-bottom: 0.5rem;
+}
 
+.signup-button{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.email-label, .password-label, .First-Name-label, .Last-Name-label, .city-label, .phone-label, .street-label, .state-label, .zip-label, .bDate-label, .country-label{
+    display: flex;
+   margin-bottom: 3px;
+   color: #09709c;
+   font-size: 16px;
+   font-weight: bold;
+}
 .slds-input{
     border:0px !important;
     border-radius: 0px !important;
     border-bottom:1px solid #d5d1cd !important;
     background-color:rgba(107, 197, 235, 0.165)!important;
 }
-
 .slds-input:active{
     --slds-c-input-shadow:0px !important;
     border-bottom:1px solid #049cdc !important;
     background-color:#049bdc2a !important;
 }
-
 .slds-input:focus{
     --slds-c-input-shadow:0px !important;
     border-bottom:1px solid #049cdc !important;
     background-color:#049bdc2a !important;
 }
-
-.email-input, .password-input{
-   /* display: flex;*/
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-.email-label, .password-label{
- display: flex;
-margin-bottom: 3px;
-color: #09709c;
-font-size: 16px;
-font-weight: bold;
-}
-
-.login-button{
-    margin-bottom: 20px;
-}
-
-::placeholder {
-    color: #1111115a;
-}
-
-.login{
+.signup{
     --slds-c-button-brand-text-color:white;
     --slds-c-button-brand-text-color-hover:white;
     --slds-c-button-brand-text-color-active:white;
@@ -73,23 +66,20 @@ font-weight: bold;
     --slds-c-button-brand-spacing-inline-start:44%;
     --slds-c-button-brand-spacing-inline-end:44%;
 }
-
-.center{
-    text-align: center;
-}
-
 .footer{
     margin-top: 20px;
     font-size: 13px;
 }
-
-.error {
-
-    text-align: center;
-    word-break: break-word;
-    color: #ff9e9e;
-}
 .link{
     color:#1485b4;
     font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .outer-div {
+        position: static;
+    }
+
+    .signup{
+        --slds-c-button-brand-spacing-inline-start:35%;
+    }
 }

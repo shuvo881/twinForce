@@ -13,3 +13,15 @@
 .recent-articles{
     width: 1200px;
 }
+@media only screen and (max-width: 515px) {
+    .title{
+        font-size: 16px;
+    }
+    .slogan{
+        font-size: 13px;
+        padding: 10px;
+    }
+    .recent-articles{
+        padding-left: 10px;
+    }
+}

@@ -1,0 +1,67 @@
+<template>
+    <div class="slds-grid slds-wrap slds-grid_align-center">
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+            <h3 class="trip-name"><lightning-icon icon-name="utility:tour" class="icon"></lightning-icon>{tripName}</h3>
+            <p class="trip-location"><lightning-icon icon-name="utility:checkin" class="icon"
+                    size="small"></lightning-icon>Location : {tripLocation}</p>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-2">
+            <div class="slds-grid slds-wrap">
+                <!-- <div class="slds-col slds-size_1-of-1  slds-medium-size_1-of-4 slds-large-size_1-of-4">
+                    <h3 class="trip-price">Current Trip Price</h3>
+                    <p class="trip-location">${tripPrice}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-1  slds-medium-size_1-of-4  slds-large-size_1-of-4 ">
+                    <h3 class="trip-price">Previous Trip Price</h3>
+                    <p class="trip-location">${previousPrice}</p>
+                </div> -->
+                <div class="slds-col slds-size_1-of-1  slds-medium-size_1-of-2  slds-large-size_1-of-1">
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-1 slds-large-size_1-of-1">
+            <div class="slds-grid slds-wrap">
+                <div
+                    class="slds-col slds-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2 slds-grid_align-center">
+                    <h3 class="trip-desc-title">Trip Description</h3>
+                    <p class="trip-desc">{tripDesc}</p>
+                    <h3 class="trip-desc-title">Trip Status</h3>
+                    <p class="trip-desc">{tripStatus}</p>
+                    <h3 class="trip-desc-title">Trip Starts From</h3>
+                    <p class="trip-desc">{tripStartsFrom}</p>
+                    <h3 class="trip-desc-title">Trip Ends in</h3>
+                    <p class="trip-desc">{tripEnds}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-1  slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <div class="slds-grid slds-wrap">
+                        <div
+                            class="slds-col slds-size_1-of-1 duration-container  slds-medium-size_1-of-2  slds-large-size_1-of-2">
+                            <h3 class="trip-duration"><lightning-icon icon-name="utility:date_time" class="icon"
+                                    size="small"></lightning-icon>Duration</h3>
+                            <p class="trip-location">{tripDuration} Days</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1  slds-medium-size_1-of-2  slds-large-size_1-of-2">
+                            <h3 class="trip-price-per-person"><lightning-icon icon-name="utility:currency" class="icon"
+                                    size="small"></lightning-icon>Trip Price</h3>
+                            <p class="trip-location">${pricePerPerson}</p>
+                        </div>
+                        <div
+                            class="more-details-card  slds-col slds-size_1-of-1  slds-medium-size_1-of-1  slds-large-size_1-of-1">
+                            <h3 class="more-details-card-title slds-border_bottom">More Details</h3>
+                            <!-- <p class="more-details-card-subtitle">Number of Total Spots: <span class="card-value">{numOfSpots}</span></p>
+                            <p class="more-details-card-subtitle">Number of Spots Booked: <span class="card-value">{spotsBooked}</span></p>
+                            <p class="more-details-card-subtitle">Number of Available Spots: <span class="card-value">{availableSpots}</span></p> -->
+                            <p class="more-details-card-subtitle">Days Until Trip Starts: <span
+                                    class="card-value">{daysUntilTripStarts}</span></p>
+                            <p class="more-details-card-subtitle">Minimum Deposit: <span
+                                    class="card-value">${minimumDeposit}</span></p>
+                            <p class="more-details-card-subtitle">Country: <span class="card-value">{country}</span></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

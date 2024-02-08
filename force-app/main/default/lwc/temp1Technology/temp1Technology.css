@@ -1,0 +1,51 @@
+/* .slds-box{
+    border-radius: 5%;
+} */
+
+/* .techPic{
+    
+    margin-left: 40rem;
+    margin-right: 40rem;
+    height: 10rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .techPic{
+        margin-left: none;
+        margin-right: none;
+        height: none;
+    }
+}
+@media only screen and (max-width: 768px) {
+    
+    .techPic{
+        margin-left: none;
+        margin-right: none;
+        height: none;
+    }
+}  */
+
+.Card1{
+    margin-left: 40rem;
+    margin-right: 40rem;
+}
+.img1{
+    height: 2rem;
+    width: 2rem;
+}
+@media screen and (max-width: 768px) {
+    
+    .Card1{
+        text-align: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+@media screen and (max-width: 1160px) {
+    
+    .Card1{
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
