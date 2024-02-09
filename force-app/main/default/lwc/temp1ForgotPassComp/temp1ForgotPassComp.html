@@ -18,7 +18,7 @@
                     Email
                     </div>
                     
-                    <input placeholder="Email" class="slds-input slds-m-vertical_small" type="text" value={username} onchange={handleUsername} required/>
+                    <input placeholder="Email" class="slds-input slds-m-vertical_small" type="text" value={username} oninput={handleUsername} required/>
                 </div>
                 <div class="send-button">
                     <lightning-button class="send" variant="brand" label="Send" onclick={handlesend}></lightning-button>

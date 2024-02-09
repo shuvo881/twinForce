@@ -31,5 +31,5 @@ global class LightningForgotPasswordController {
         } catch (Exception ex) {
             return ex.getMessage();            
         }        
-    } 
+    }
 }
