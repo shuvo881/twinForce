@@ -10,6 +10,7 @@ export default class Temp1ForgotPassComp extends LightningElement {
         this.username = event.target.value;
     }
 
+    
     handlesend(){
         console.log(this.username);
         forgotPassword({username:this.username})
